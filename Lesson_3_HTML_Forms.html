@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3: Assignment | HTML Forms</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lesson 3: Assignment | HTML Forms</h1>
+    </header>
+    <br>
+    <main>
+        <h3 style="color:blueviolet">Please complete the forms</h3>
+        <br>
+        <form onSubmit="handlesubmit">
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email here"
+                autocomplete="on"
+                pattern="[\w]+@[\w]+.com"
+                title="Please enter a valid email address"
+                required> <button type="submit">Submit</button>
+                <div role="alert" aria-live="assertive"></div>
+            <br>
+            <br>
+            <label for="quantity">Quantity</label>
+            <input
+                type="number"
+                id="quantity"
+                style="width: 150px"
+                name="quantity"
+                placeholder="Select your quantity here"
+                min="0"
+                max="21"
+                step="3">
+                <div role="alert" aria-live="assertive"></div>
+            <br>
+            <br>
+            <label for="date">Date</label>
+            <input
+                type="date"
+                id="date"
+                style="width: 80px"
+                name="date"
+                min="2024-05-29"
+                max="2024-12-31">
+                <div role="alert" aria-live="assertive"></div>
+            <br>
+            <br>
+            <h6 style="height:70px; color:blueviolet; width:150px; transform:scale(1.7); margin-left: 30px; padding-left: 20px; ">
+                <label for="rating">Rating from 1 to 50</label>
+                <input
+                class="slider"    
+                type="range"
+                    id="rating"
+                    width="100%"
+                    name="rating"
+                    placeholder="Select your quality range"
+                    min="0"
+                    max="50"
+                    value="25"
+                    oninput="rangeValue.innerText = this.value">
+                    <p id="rangeValue">25</p>
+                    <div role="alert" aria-live="assertive"></div>
+            </h6>
+            <br>
+            <br>
+            <label for="favcolor">Select your favorite color:</label>
+            <input
+                type="color"
+                id="favcolor"
+                name="favcolor"
+                value="#ff00ff">
+                <div role="alert" aria-live="assertive"></div>
+            <br>
+        <br>
+        <form onSubmit="handlesubmit">
+            <label for="favcolor">Select your favorite coding language:</label>
+            <select>
+                <option value="Option 1">HTML</option>
+                <option value="Option 2">Python</option>
+                <option value="Option 3">JavaScript</option>
+                <option value="Option 4">SQL</option>
+            </select>
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+
+            <br>
+            <label for="Level of Expertise">Level of Expertise:</label>
+            <input 
+                type="radio"
+                id="beginner"
+                name="level"
+                value="Beginner">
+            <label for="beginner">Beginner</label>
+
+            <input
+                type="radio"
+                id="intermediate"
+                name="level"
+                value="intermediate">
+            <label for="intermediate">Intermediate</label>
+            
+            <input
+                type="radio"
+                id="advanced"
+                name="level"
+                value="advanced">
+            <label for="advanced">Advanced</label>
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+
+            <br>
+            <label for="Preferred development platform">Choose your preferred development platform</label>
+            <input type="checkbox"
+                    id="Web"
+                    name="Option 1"
+                    value="Web">
+            <label for="Web">Web</label>
+
+            <input type="checkbox"
+                    id="Mobile"
+                    name="Option 2"
+                    value="Mobile">
+            <label for="Mobile">Mobile</label>
+
+            <input type="checkbox"
+                    id="Desktop"
+                    name="Option 3"
+                    value="Desktop">
+            <label for="Desktop">Desktop</label>
+
+        <div role="alert" aria-live="assertive"></div>
+        <br>
+            
+    </main>
+</body>
+</html>
